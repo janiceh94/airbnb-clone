@@ -14,7 +14,7 @@ const Card = () => {
                 <span>USA</span>
             </div>
             <p>House in the country side</p>
-            <p>From $133 / night</p>
+            <p>From $135 / night</p>
         </div>
     )
 }
