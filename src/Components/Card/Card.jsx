@@ -6,15 +6,15 @@ import Star from '../../Images/Star 1.png'
 const Card = () => {
     return (
         <div className="card">
-            <img src={Cottage} alt='cottage'/>
+            <img className='card-image' src={Cottage} alt='cottage'/>
             <div className='card-stats'>
-                <img src ={Star} alt='star'/>
+                <img className='card-star' src ={Star} alt='star'/>
                 <span>5.0</span>
-                <span>(6)</span>
-                <span>USA</span>
+                <span className='grey'>(6)</span>
+                <span className='grey'>USA</span>
             </div>
             <p>House in the country side</p>
-            <p>From $135 / night</p>
+            <p><span className='bold'>From $135</span> / night</p>
         </div>
     )
 }
