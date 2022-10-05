@@ -1,4 +1,4 @@
-export default [
+const Data =  [
     {
         id: 1,
         title: "House in the country side",
@@ -33,3 +33,5 @@ export default [
         location: "Malibu",
     },
 ]
+
+export default Data

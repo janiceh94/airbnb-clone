@@ -1,6 +1,9 @@
 .card{
     width: 400px;
     font-size: 15px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 .card-image{
     width: 100%;
@@ -11,11 +14,24 @@
     align-items: center;
 }
 .card-star{
-    height: 15px;
+    height: 14px;
 }
 .grey{
     color: #918E9B;
 }
 .bold{
     font-weight: bold;
+}
+.card-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-price{
+    margin-top: auto;
+} 
+.cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
 }

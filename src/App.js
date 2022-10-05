@@ -4,20 +4,30 @@ import './index.css';
 import Navbar from './Components/Navbar/Navbar';
 import ImageGrid from './Components/ImageGrid/ImageGrid';
 import Card from './Components/Card/Card';
+import Data from './Data/Data';
 
 function App() {
+
+  const cards = Data.map(item => {
+    return (
+      <Card
+        cardImg = {item.coverImg}
+        ratings = {item.stats.rating}
+        reviewCount = {item.stats.reviewCount}
+        location = {item.location}
+        title = {item.title}
+        price = {item.price}
+      />
+    )
+  })
+
   return (
     <div>
       <Navbar/>
       <ImageGrid/>
-      <Card
-        img = "cottage-gbb028a51e_1920.jpg"
-        ratings = "5.0"
-        reviewCount = {6}
-        country = "USA"
-        title = "House in the country side"
-        price = {135}
-      />
+      <section className="cards-list">
+        {cards}
+      </section>
     </div>
   );
 }
