@@ -11,6 +11,7 @@ function App() {
   const cards = Data.map(item => {
     return (
       <Card
+        key = {item.id}
         cardImg = {item.coverImg}
         ratings = {item.stats.rating}
         reviewCount = {item.stats.reviewCount}
