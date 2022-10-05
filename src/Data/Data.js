@@ -9,6 +9,7 @@ const Data =  [
             reviewCount: 6
         },
         location: "New Zealand",
+        openSpots: 0
     },
     {
         id: 2,
@@ -20,6 +21,7 @@ const Data =  [
             reviewCount: 2
         },
         location: "Yosemite",
+        openSpots: 20
     },
     {
         id: 3,
@@ -31,6 +33,7 @@ const Data =  [
             reviewCount: 10
         },
         location: "Malibu",
+        openSpots: 15
     },
 ]
 
