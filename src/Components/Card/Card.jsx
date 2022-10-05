@@ -5,9 +5,9 @@ import Star from '../../Images/Star 1.png'
 const Card = (props) => {
     return (
         <div className="card">
-            <div className = 'card-badge'>
+            {props.openSpots === 0 && <div className = 'card-badge'>
                 SOLD OUT
-            </div>
+            </div>}
             <img className="card-image" src={require(`../../Images/${props.cardImg}`)}alt='cottage'/>
             <div className='card-stats'>
                 <img className='card-star' src ={Star} alt='star'/>
