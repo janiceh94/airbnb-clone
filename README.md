@@ -1,5 +1,7 @@
 A simple airbnb clone layout 
 
+![Screen Shot 2022-10-05 at 11 20 24 AM](https://user-images.githubusercontent.com/93102224/194133763-4193e2d4-6edd-422c-bfae-c818174a92a4.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
