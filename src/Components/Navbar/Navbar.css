@@ -7,3 +7,10 @@ nav{
 .nav-logo{
     max-width: 150px;
 }
+.logo-title{
+    margin: auto;
+    position: absolute;
+    left: 170px;
+    top: 70px;
+    font-size: 40px;
+}
