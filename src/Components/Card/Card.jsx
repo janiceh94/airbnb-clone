@@ -3,9 +3,13 @@ import './Card.css';
 import Star from '../../Images/Star 1.png'
 
 const Card = (props) => {
+    let badgeText
+    if (props.openSpots === 0){
+        badgeText = "SOLD OUT"
+    }
     return (
         <div className="card">
-            {props.openSpots === 0 && <div className = 'card-badge'>
+            {badgeText && <div className = 'card-badge'>
                 SOLD OUT
             </div>}
             <img className="card-image" src={require(`../../Images/${props.cardImg}`)}alt='cottage'/>
