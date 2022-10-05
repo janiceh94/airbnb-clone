@@ -4,7 +4,7 @@ import Star from '../../Images/Star 1.png'
 
 const Card = (props) => {
     let badgeText
-    if (props.openSpots === 0){
+    if (props.item.openSpots === 0){
         badgeText = "SOLD OUT"
     }
     return (
@@ -12,15 +12,15 @@ const Card = (props) => {
             {badgeText && <div className = 'card-badge'>
                 SOLD OUT
             </div>}
-            <img className="card-image" src={require(`../../Images/${props.cardImg}`)}alt='cottage'/>
+            <img className="card-image" src={require(`../../Images/${props.item.coverImg}`)}alt='cottage'/>
             <div className='card-stats'>
                 <img className='card-star' src ={Star} alt='star'/>
-                <span>{props.rating}</span>
-                <span className='grey'>({props.reviewCount})</span>
-                <span className='grey'>{props.location}</span>
+                <span>{props.item.stats.rating}</span>
+                <span className='grey'>({props.item.stats.reviewCount})</span>
+                <span className='grey'>{props.item.location}</span>
             </div>
-            <p className='card-title'>{props.title}</p>
-            <p className='card-price'><span className='bold'>From ${props.price}</span> / night</p>
+            <p className='card-title'>{props.item.title}</p>
+            <p className='card-price'><span className='bold'>From ${props.item.price}</span> / night</p>
         </div>
     )
 }
