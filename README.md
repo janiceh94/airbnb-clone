@@ -1,4 +1,4 @@
-A simple airbnb clone layout 
+A simple static airbnb clone layout following Scrimba React course with Bob Ziroll
 
 ![Screen Shot 2022-10-05 at 11 20 24 AM](https://user-images.githubusercontent.com/93102224/194133763-4193e2d4-6edd-422c-bfae-c818174a92a4.png)
 
